@@ -5,9 +5,51 @@ import avalancheBridgeLogo from './branding/images/avalancheLogo.svg';
 import { ChainId } from '@aave/contract-helpers';
 
 export const networkConfigs: Record<string, BaseNetworkConfig> = {
+  [941]: {
+    name: 'PulseChain V2',
+    publicJsonRPCUrl: ['https://rpc.v2b.testnet.pulsechain.com'],
+    addresses: {
+      walletBalanceProvider: '0xEbdeaF40a845E99Ff9fD3Ce107FD2F0509A40AFD',
+      uiPoolDataProvider: '0x1689f43E24201D0f98Faaabc988f3FB3C7d1fEcE',
+      uiIncentiveDataProvider: '',
+      chainlinkFeedRegistry: '',
+    },
+    protocolDataUrl: 'https://scan.v2b.testnet.pulsechain.com/graphiql',
+    // baseUniswapAdapter: '',
+    baseAsset: 'TPLS',
+    baseAssetWrappedAddress: '0x8a810ea8B121d08342E9e7696f4a9915cBE494B7',
+    // incentives hardcoded information
+    rewardTokenSymbol: 'PHIAT',
+    rewardTokenAddress: '0x240196d9f3BAD74e067A11093026B8BC2613b689',
+    rewardTokenDecimals: 18,
+    explorerLink: 'https://scan.v2b.testnet.pulsechain.com/',
+    rpcOnly: true,
+    isTestnet: true,
+  },
+  //  [941]: {
+  //   name: 'PulseChain V1',
+  //   publicJsonRPCUrl: ['https://rpc.v2b.testnet.pulsechain.com'],
+  //   addresses: {
+  //     walletBalanceProvider: '0xFB8f3EC5eDF09Dc6059ccC77204C9849C6AB0d28',
+  //     uiPoolDataProvider: '0x4796b1733e19be396484F4cF747d302Eefbd022E',
+  //     uiIncentiveDataProvider: '',
+  //     chainlinkFeedRegistry: '',
+  //   },
+  //   protocolDataUrl: 'https://scan.v2b.testnet.pulsechain.com/graphiql',
+  //   // baseUniswapAdapter: '',
+  //   baseAsset: 'TPLS',
+  //   baseAssetWrappedAddress: '0x8a810ea8B121d08342E9e7696f4a9915cBE494B7',
+  //   // incentives hardcoded information
+  //   rewardTokenSymbol: 'PHIAT',
+  //   rewardTokenAddress: '0x240196d9f3BAD74e067A11093026B8BC2613b689',
+  //   rewardTokenDecimals: 18,
+  //   explorerLink: 'https://scan.v2b.testnet.pulsechain.com/',
+  //   rpcOnly: true,
+  //   isTestnet: true,
+  // },
   [ChainId.kovan]: {
     name: 'Kovan',
-    publicJsonRPCUrl: ['https://eth-kovan.alchemyapi.io/v2/demo', 'https://kovan.poa.network'],
+    publicJsonRPCUrl: ['https://eth-kovan.alchemyapi.io/v2/demo'],
     addresses: {
       walletBalanceProvider: '0x07DC923859b68e9399d787bf52c4Aa9eBe3490aF',
       uiPoolDataProvider: '0x6062ad399E47BF75AEa0b3c5BE7077c1E8664Dcb',

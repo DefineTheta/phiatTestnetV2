@@ -2,7 +2,7 @@ import React from 'react';
 import { Redirect, Route, Switch } from 'react-router-dom';
 import { useSwipeable } from 'react-swipeable';
 import css from 'styled-jsx/css';
-import { useThemeContext } from '@aave/aave-ui-kit';
+import { useThemeContext, ThemeNames } from '@aave/aave-ui-kit';
 
 import { useStaticPoolDataContext } from './libs/pool-data-provider';
 import { useMenuContext } from './libs/menu';
@@ -50,6 +50,11 @@ const staticStyles = css.global`
 function ModulesWithMenu() {
   const { isUserHasDeposits, userId } = useStaticPoolDataContext();
   const { currentMarketData } = useProtocolDataContext();
+  function darkk() {
+    const { isCurrentThemeDark, changeTheme } = useThemeContext();
+    changeTheme(ThemeNames.dark);
+  }
+  darkk();
 
   return (
     <ScreensWrapper>

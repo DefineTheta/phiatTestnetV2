@@ -23,7 +23,13 @@ export default function GradientLine({ height }: GradientLineProps) {
           width: 100%;
           height: ${height || 1}px;
           display: block;
-          background: ${gradientBackground};
+          //background: ${gradientBackground};
+          background: linear-gradient(
+            90deg,
+            rgba(230, 25, 230, 1) 0%,
+            rgba(128, 0, 255, 1) 24%,
+            rgba(0, 255, 85, 1) 82%
+          );
         }
       `}</style>
     </span>

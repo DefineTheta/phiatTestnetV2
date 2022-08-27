@@ -106,6 +106,13 @@ export function StaticPoolDataProvider({
           underlyingAsset: API_ETH_MOCK_ADDRESS.toLowerCase(),
         };
       }
+      if (reserve.symbol.toUpperCase() === 'PLS') {
+        return {
+          ...reserve,
+          symbol: networkConfig.baseAsset,
+          underlyingAsset: API_ETH_MOCK_ADDRESS.toLowerCase(),
+        };
+      }
       if (
         reserve.underlyingAsset.toLowerCase() ===
         '0x50379f632ca68d36e50cfbc8f78fe16bd1499d1e'.toLowerCase()
@@ -138,7 +145,10 @@ export function StaticPoolDataProvider({
         reserve,
       };
       userReserves.push(reserveWithBase);
-      if (reserve.symbol.toUpperCase() === `W${networkConfig.baseAsset}`) {
+      if (
+        reserve.symbol.toUpperCase() === `W${networkConfig.baseAsset}` ||
+        reserve.symbol.toUpperCase() === 'PLS'
+      ) {
         const userReserveFixed: UserReserveDataExtended = {
           ...userReserve,
           underlyingAsset: API_ETH_MOCK_ADDRESS.toLowerCase(),

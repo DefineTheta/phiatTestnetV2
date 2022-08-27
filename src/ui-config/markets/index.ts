@@ -12,9 +12,47 @@ export enum CustomMarket {
   amm_kovan = 'amm_kovan',
   amm_mainnet = 'amm_mainnet',
   proto_fuji = 'proto_fuji',
+  proto_tpls = 'proto_tpls',
+  proto_tpls_1 = 'proto_tpls_1',
 }
 
 export const marketsData: { [key in keyof typeof CustomMarket]: MarketDataType } = {
+  [CustomMarket.proto_tpls]: {
+    chainId: 941,
+    activeLogo: logos.pls,
+    logo: logos.pls,
+    aTokenPrefix: 'ta',
+    enabledFeatures: {
+      faucet: true,
+      governance: true,
+      staking: true,
+      incentives: true,
+    },
+    addresses: {
+      LENDING_POOL_ADDRESS_PROVIDER: '0xa17f0A2634aE032dC9a4dD74F9f7D0beb194f320'.toLowerCase(),
+      LENDING_POOL: '0x1F9D8481F7529cC10eAF92EAf979b0523120e18d',
+      WETH_GATEWAY: '0xf14D924325cFDE06123d7f08006044569E8215Bd',
+      FAUCET: '',
+    },
+  },
+  [CustomMarket.proto_tpls_1]: {
+    chainId: 941,
+    activeLogo: logos.plsbw,
+    logo: logos.plsbw,
+    aTokenPrefix: 'ta',
+    enabledFeatures: {
+      faucet: true,
+      governance: true,
+      staking: true,
+      incentives: true,
+    },
+    addresses: {
+      LENDING_POOL_ADDRESS_PROVIDER: '0x1Af114a6c9F9AEB5BE15b0Eb853269e5de8f66cD'.toLowerCase(),
+      LENDING_POOL: '0xb1F40af70AC7406a1b970D06978A3d9112d9c1Cc',
+      WETH_GATEWAY: '0xA93eb3Fa4B741373aC3f66f63E7048C638C3A2C3',
+      FAUCET: '',
+    },
+  },
   [CustomMarket.proto_kovan]: {
     chainId: ChainId.kovan,
     logo: logos.aavev2Logo,

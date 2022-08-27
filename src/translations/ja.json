@@ -243,7 +243,7 @@
   "components.menu.navigation.deposit": "預入",
   "components.menu.navigation.governance": "ガバナンス",
   "components.menu.navigation.markets": "市場",
-  "components.menu.navigation.stake": "ステーク",
+  "components.menu.navigation.staking": "",
   "components.menu.navigation.swap": "スワップ",
   "components.wrappers.ContentWrapper.back": "",
   "components.wrappers.ContentWrapperWithTopLine.collapse": "",
@@ -957,5 +957,8 @@
   "ui-config.branding.UnlockWalletExtraText.unlockWalletExtraText": "",
   "ui-config.menu-items.faq": "よくある質問",
   "ui-config.menu-items.faucet": "フォーセット",
+  "ui-config.menu-items.sac": "",
+  "ui-config.menu-items.tele": "",
+  "ui-config.menu-items.twitter": "",
   "withdraw": "出金"
 }

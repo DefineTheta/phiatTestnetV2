@@ -243,7 +243,7 @@
   "components.menu.navigation.deposit": "",
   "components.menu.navigation.governance": "",
   "components.menu.navigation.markets": "",
-  "components.menu.navigation.stake": "",
+  "components.menu.navigation.staking": "",
   "components.menu.navigation.swap": "",
   "components.wrappers.ContentWrapper.back": "",
   "components.wrappers.ContentWrapperWithTopLine.collapse": "",
@@ -957,5 +957,8 @@
   "ui-config.branding.UnlockWalletExtraText.unlockWalletExtraText": "",
   "ui-config.menu-items.faq": "",
   "ui-config.menu-items.faucet": "",
+  "ui-config.menu-items.sac": "",
+  "ui-config.menu-items.tele": "",
+  "ui-config.menu-items.twitter": "",
   "withdraw": ""
 }

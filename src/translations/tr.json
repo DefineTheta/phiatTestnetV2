@@ -243,7 +243,7 @@
   "components.menu.navigation.deposit": "Para Yatırma",
   "components.menu.navigation.governance": "Yönetim",
   "components.menu.navigation.markets": "Piyasalar",
-  "components.menu.navigation.stake": "Kilitle",
+  "components.menu.navigation.staking": "",
   "components.menu.navigation.swap": "",
   "components.wrappers.ContentWrapper.back": "",
   "components.wrappers.ContentWrapperWithTopLine.collapse": "",
@@ -957,5 +957,8 @@
   "ui-config.branding.UnlockWalletExtraText.unlockWalletExtraText": "",
   "ui-config.menu-items.faq": "SSS",
   "ui-config.menu-items.faucet": "Musluk",
+  "ui-config.menu-items.sac": "",
+  "ui-config.menu-items.tele": "",
+  "ui-config.menu-items.twitter": "",
   "withdraw": ""
 }

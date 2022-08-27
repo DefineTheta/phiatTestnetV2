@@ -23,45 +23,7 @@ export const faqLink = 'https://docs.aave.com/faq/migration-and-staking';
 export default function Staking() {
   if (!stakeConfig) {
     return <ErrorPage title="Stake was not configured" />;
+  } else {
+    return <ErrorPage title="Revenue Sharing Staking Coming Soon" />;
   }
-  return (
-    <StakeDataProvider stakeConfig={stakeConfig}>
-      <StakingWrapper>
-        <Switch>
-          <Route exact={true} path="/staking" component={StakingMain} />
-
-          <Route exact={true} path="/staking/:currencySymbol" component={StakeAmount} />
-          <Route
-            exact={true}
-            path="/staking/:currencySymbol/disclaimer"
-            component={StakeDisclaimer}
-          />
-          <Route
-            exact={true}
-            path="/staking/:currencySymbol/confirmation"
-            component={StakeWithApprovalConfirmation}
-          />
-
-          <Route
-            exact={true}
-            path="/staking/:currencySymbol/claim/confirmation"
-            component={StakingClaimConfirmation}
-          />
-
-          <Route
-            exact={true}
-            path="/staking/:currencySymbol/activate-cooldown/confirmation"
-            component={ActivateCooldownConfirmation}
-          />
-
-          <Route exact={true} path="/staking/:currencySymbol/unstake" component={UnstakeAmount} />
-          <Route
-            exact={true}
-            path="/staking/:currencySymbol/unstake/confirmation"
-            component={UnstakeConfirmation}
-          />
-        </Switch>
-      </StakingWrapper>
-    </StakeDataProvider>
-  );
 }

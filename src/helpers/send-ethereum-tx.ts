@@ -56,6 +56,7 @@ export async function sendEthTransaction(
   let extendedTxData: transactionType;
   try {
     extendedTxData = await txGetter();
+
     if (customGasPrice) extendedTxData.gasPrice = BigNumber.from(customGasPrice);
   } catch (e) {
     console.log('tx building error', e);

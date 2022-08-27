@@ -60,7 +60,7 @@ export default function SelectPreferredNetwork({
         verticalPosition="bottom"
         horizontalPosition="center"
       >
-        {supportedNetworks.map((network) => (
+        {supportedNetworks.slice(0, 1).map((network) => (
           <button
             type="button"
             className="SelectPreferredNetwork__option"

@@ -67,7 +67,7 @@ export default function ErrorPage({
 
       <img
         className="ErrorPage__background"
-        src={isCurrentThemeDark ? backgroundDark : background}
+        src={'https://phiat.io/public/images/bd-bg.png'}
         alt=""
       />
 
@@ -79,7 +79,8 @@ export default function ErrorPage({
           color: ${currentTheme.textDarkBlue.hex};
           background: ${currentTheme.mainBg.hex};
           &__title {
-            color: ${currentTheme.primary.hex};
+            font-size: xx-large;
+            color: #e619e6;
           }
         }
       `}</style>

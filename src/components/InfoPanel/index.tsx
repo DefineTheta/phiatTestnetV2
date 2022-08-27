@@ -5,7 +5,7 @@ import { useThemeContext } from '@aave/aave-ui-kit';
 import staticStyles from './style';
 
 import animationCircle from '../../images/animationCircle.svg';
-import aaveGhost from '../../images/aaveGhost.svg';
+//import aaveGhost from '../../images/aaveGhost.svg';
 
 interface InfoPanelProps {
   children: ReactNode;
@@ -19,7 +19,7 @@ export default function InfoPanel({ children }: InfoPanelProps) {
       <img className="InfoPanel__circle" src={animationCircle} alt="" />
 
       <div className="InfoPanel__content-inner">
-        <img className="InfoPanel__ghost" src={aaveGhost} alt="" />
+        {/*<img className="InfoPanel__ghost" src={aaveGhost} alt="" />*/}
         <div className="InfoPanel__content">{children}</div>
       </div>
 

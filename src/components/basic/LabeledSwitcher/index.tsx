@@ -82,7 +82,11 @@ export default function LabeledSwitcher({
 
           button.LabeledSwitch__buttonActive {
             span {
-              background-image: ${gradientText};
+              background-image: linear-gradient(
+                90deg,
+                rgba(230, 25, 230, 1) 0%,
+                rgba(128, 0, 255, 1) 75%
+              );
             }
           }
         }

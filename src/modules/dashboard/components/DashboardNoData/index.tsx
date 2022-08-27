@@ -29,7 +29,7 @@ export default function DashboardNoData() {
       />
 
       <div className="DashboardNoData__markets">
-        {availableMarkets.map((market) => {
+        {availableMarkets.slice(0, 1).map((market) => {
           const marketData = marketsData[market];
           return (
             <MarketSelectButton

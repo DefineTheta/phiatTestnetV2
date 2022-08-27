@@ -243,7 +243,7 @@
   "components.menu.navigation.deposit": "Depósito",
   "components.menu.navigation.governance": "Governança",
   "components.menu.navigation.markets": "Mercados",
-  "components.menu.navigation.stake": "Stake",
+  "components.menu.navigation.staking": "",
   "components.menu.navigation.swap": "Troca",
   "components.wrappers.ContentWrapper.back": "",
   "components.wrappers.ContentWrapperWithTopLine.collapse": "",
@@ -957,5 +957,8 @@
   "ui-config.branding.UnlockWalletExtraText.unlockWalletExtraText": "",
   "ui-config.menu-items.faq": "Perguntas frequentes",
   "ui-config.menu-items.faucet": "Faucet",
+  "ui-config.menu-items.sac": "",
+  "ui-config.menu-items.tele": "",
+  "ui-config.menu-items.twitter": "",
   "withdraw": ""
 }

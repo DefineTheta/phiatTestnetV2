@@ -71,7 +71,7 @@ export default function ScreensWrapper({ children }: ScreensWrapperProps) {
 
       <img
         className="ScreensWrapper__background"
-        src={isCurrentThemeDark ? backgroundDark : background}
+        // src={isCurrentThemeDark ? 'https://phiat.io/public/images/bd-bg.png' : ''}
         alt=""
       />
 

@@ -40,6 +40,7 @@ export function usePoolData(
     undefined
   );
 
+  // a work-around is to say if Chain ="941", hardcode [reservesResponse] for now
   // Fetch and format reserve incentive data from UiIncentiveDataProvider contract
   const fetchReserves = async () => {
     const provider = getProvider(chainId);
@@ -53,6 +54,7 @@ export function usePoolData(
       const reservesResponse = await poolDataProviderContract.getReservesHumanized(
         lendingPoolAddressProvider
       );
+      console.log(reservesResponse);
       setReserves(reservesResponse);
       setErrorReserves(false);
     } catch (e) {

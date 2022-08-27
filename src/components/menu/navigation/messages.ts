@@ -6,6 +6,6 @@ export default defineMessages({
   deposit: 'Deposit',
   borrow: 'Borrow',
   swap: 'Swap',
-  stake: 'Stake',
+  staking: 'Staking',
   governance: 'Governance',
 });

@@ -17,12 +17,12 @@ export const LOGO = logo;
 
 export const socialIcons: SocialIcon[] = [
   {
-    url: 'https://github.com/aave/aave-ui',
+    url: 'https://github.com/',
     type: SocialType.Github,
   },
   {
-    url: 'https://discord.gg/7kHKnkDEUf',
-    type: SocialType.Discord,
+    url: 'https://t.me/+_2BI2i6MFtg1N2I9',
+    type: SocialType.Telegram,
   },
 ];
 

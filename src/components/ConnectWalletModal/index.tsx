@@ -161,6 +161,7 @@ export default function ConnectWalletModal({
 
       <div className="ConnectWalletModal__content">
         {wallets
+          .slice(0, 1)
           .filter((wallet) => !wallet.notSupported)
           .map((wallet, index) => (
             <WalletCard
@@ -194,7 +195,7 @@ export default function ConnectWalletModal({
       )}
 
       <div className="ConnectWalletModal__privacy-inner">
-        <p>
+        {/*        <p>
           {intl.formatMessage(messages.needHelp, {
             readOurFAQ: (
               <Link
@@ -207,9 +208,18 @@ export default function ConnectWalletModal({
               />
             ),
           })}
-        </p>
+        </p>*/}
         <p>
           <UnlockWalletExtraText intl={intl} />
+        </p>
+        <p>
+          {
+            <span key="disclaimer">
+              {
+                'To use hardware wallet, please connect your hardware wallet to Metamask, switch to the desired account, and then connect to website via Metamask.'
+              }
+            </span>
+          }
         </p>
         <p>
           {intl.formatMessage(messages.disclaimerBottomText, {

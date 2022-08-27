@@ -20,10 +20,10 @@ export default function FormattedTxErrorText() {
       </span>
       <span>
         {intl.formatMessage(messages.errorDescriptionSecond, {
-          discord: (
+          telegram: (
             <Link
-              to="https://aave.com/discord"
-              title="Discord"
+              to="https://t.me/+_2BI2i6MFtg1N2I9"
+              title="Telegram"
               absolute={true}
               inNewWindow={true}
               color="secondary"

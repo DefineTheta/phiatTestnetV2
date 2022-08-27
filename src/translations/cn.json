@@ -243,7 +243,7 @@
   "components.menu.navigation.deposit": "存款",
   "components.menu.navigation.governance": "治理",
   "components.menu.navigation.markets": "市场",
-  "components.menu.navigation.stake": "质押",
+  "components.menu.navigation.staking": "",
   "components.menu.navigation.swap": "交换",
   "components.wrappers.ContentWrapper.back": "",
   "components.wrappers.ContentWrapperWithTopLine.collapse": "",
@@ -957,5 +957,8 @@
   "ui-config.branding.UnlockWalletExtraText.unlockWalletExtraText": "",
   "ui-config.menu-items.faq": "常见问题",
   "ui-config.menu-items.faucet": "水龙头",
+  "ui-config.menu-items.sac": "",
+  "ui-config.menu-items.tele": "",
+  "ui-config.menu-items.twitter": "",
   "withdraw": "取款"
 }

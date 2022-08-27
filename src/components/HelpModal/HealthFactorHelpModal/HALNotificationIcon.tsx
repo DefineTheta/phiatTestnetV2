@@ -30,6 +30,8 @@ const marketToHALAaveVersionUrlParam = (market: CustomMarket): string | undefine
     case CustomMarket.proto_fuji:
     case CustomMarket.amm_kovan:
     case CustomMarket.amm_mainnet:
+    case CustomMarket.proto_tpls:
+    case CustomMarket.proto_tpls_1:
       return undefined;
 
     default:

@@ -168,14 +168,24 @@ export default function ActionsWrapper({
             color: ${currentTheme.textDarkBlue.hex};
           }
           &__buttonAllowed {
-            background: ${allowedGradient};
+            background: linear-gradient(
+              90deg,
+              rgba(230, 25, 230, 1) 0%,
+              rgba(128, 0, 255, 1) 66%,
+              rgba(0, 255, 85, 1) 92%
+            );
             color: ${currentTheme.white.hex};
             &:hover {
               background: ${activeGradient};
             }
           }
           &__buttonActive {
-            background: ${activeGradient};
+            background: linear-gradient(
+              90deg,
+              rgba(230, 25, 230, 1) 11%,
+              rgba(128, 0, 255, 1) 44%,
+              rgba(0, 255, 85, 1) 88%
+            );
             color: ${currentTheme.white.hex};
           }
           &__buttonSubmitted {

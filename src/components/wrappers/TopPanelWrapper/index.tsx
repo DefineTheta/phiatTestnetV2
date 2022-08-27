@@ -45,7 +45,7 @@ export default function TopPanelWrapper({
       <style jsx={true}>{`
         .TopPanelWrapper {
           background: ${currentTheme.darkBlue.hex};
-
+          box-shadow: 0px 0px 28px black;
           &__button {
             color: ${currentTheme.white.hex};
             &:hover {

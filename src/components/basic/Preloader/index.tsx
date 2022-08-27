@@ -93,7 +93,7 @@ export default function Preloader({
           }
 
           &__dot {
-            background: ${currentTheme.secondary.hex};
+            background: ${currentTheme.primary.hex};
 
             &:nth-child(1) {
               animation: animation 3s linear infinite 0s;
@@ -123,22 +123,22 @@ export default function Preloader({
           0% {
             opacity: 0;
             transform: scale(0.5);
-            background: ${currentTheme.secondary.hex};
+            background: #8000ff;
           }
           25% {
             opacity: 1;
             transform: scale(1.25);
-            background: ${currentTheme.primary.hex};
+            background: #e619e6;
           }
           50% {
             opacity: 0;
             transform: scale(0.5);
-            background: ${currentTheme.secondary.hex};
+            background: #8000ff;
           }
           75% {
             opacity: 1;
             transform: scale(1.25);
-            background: ${currentTheme.primary.hex};
+            background: #00ff55;
           }
           100% {
             opacity: 0;

@@ -243,7 +243,7 @@
   "components.menu.navigation.deposit": "예치",
   "components.menu.navigation.governance": "가버넌스",
   "components.menu.navigation.markets": "마켓",
-  "components.menu.navigation.stake": "스테이킹",
+  "components.menu.navigation.staking": "",
   "components.menu.navigation.swap": "스왑",
   "components.wrappers.ContentWrapper.back": "",
   "components.wrappers.ContentWrapperWithTopLine.collapse": "",
@@ -957,5 +957,8 @@
   "ui-config.branding.UnlockWalletExtraText.unlockWalletExtraText": "",
   "ui-config.menu-items.faq": "FAQ",
   "ui-config.menu-items.faucet": "포셋",
+  "ui-config.menu-items.sac": "",
+  "ui-config.menu-items.tele": "",
+  "ui-config.menu-items.twitter": "",
   "withdraw": ""
 }

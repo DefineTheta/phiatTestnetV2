@@ -114,7 +114,7 @@ export default function MarketSwitcher({ toTop, className, textButton }: MarketS
     >
       <div className="MarketSwitcher__content">
         <p className="MarketSwitcher__title">{intl.formatMessage(messages.changeMarket)}</p>
-        {availableMarkets.map((market) => {
+        {availableMarkets.slice(0, 1).map((market) => {
           const marketData = marketsData[market];
           const config = getNetworkConfig(marketData.chainId);
           const testnetMark = config.isFork
@@ -140,9 +140,9 @@ export default function MarketSwitcher({ toTop, className, textButton }: MarketS
 
                   <GradientText
                     className="MarketSwitcher__marketText"
-                    colorStart={currentTheme.secondary.rgb}
+                    colorStart={currentTheme.primary.rgb}
                     colorEnd={currentTheme.primary.rgb}
-                    title={intl.formatMessage(messages.market)}
+                    title={config.name}
                   />
                 </div>
 

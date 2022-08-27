@@ -89,7 +89,7 @@ export default function RepayScreenWrapper({
               }
               color="white"
               symbol="USD"
-              subSymbol="ETH"
+              subSymbol="PLS"
               maximumValueDecimals={2}
               minimumValueDecimals={2}
               maximumSubValueDecimals={18}

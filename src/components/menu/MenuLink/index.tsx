@@ -18,9 +18,9 @@ export default function MenuLink({ to, title, isActive, hidden }: MenuLinkProps)
   const { currentTheme } = useThemeContext();
 
   const activeGradient = gradient(
-    230,
+    15,
     `${currentTheme.primary.rgb}, 1`,
-    0,
+    80,
     `${currentTheme.secondary.rgb}, 1`,
     100
   );
@@ -49,7 +49,14 @@ export default function MenuLink({ to, title, isActive, hidden }: MenuLinkProps)
           color: ${currentTheme.white.hex} !important;
           .MenuLink__title {
             i {
-              background: ${activeGradient} !important;
+              background: rgb(230, 25, 230);
+              background: linear-gradient(
+                90deg,
+                rgba(230, 25, 230, 1) 0%,
+                rgba(128, 0, 255, 1) 24%,
+                rgba(0, 255, 85, 1) 82%
+              );
+              // background: ${activeGradient} !important;
             }
           }
         }

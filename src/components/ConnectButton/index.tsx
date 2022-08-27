@@ -46,10 +46,10 @@ export default function ConnectButton({ className, size = 'normal' }: ConnectBut
           &:after {
             background: linear-gradient(
               to right,
-              ${currentTheme.secondary.hex},
-              ${currentTheme.primary.hex},
-              ${currentTheme.secondary.hex},
-              ${currentTheme.primary.hex}
+              rgba(0, 255, 85, 1),
+              rgba(230, 25, 230, 1),
+              rgba(128, 0, 255, 1),
+              rgba(0, 255, 85, 1)
             );
           }
 

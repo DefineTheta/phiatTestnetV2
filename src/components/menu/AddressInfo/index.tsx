@@ -13,6 +13,7 @@ import staticStyles from './style';
 import messages from './messages';
 import { getNetworkConfig } from '../../../helpers/config/markets-and-network-config';
 import useGetEnsName from '../../../libs/hooks/use-get-ens-name';
+import { addERC20Token } from '../../../helpers/add-erc20';
 
 export default function AddressInfo() {
   const intl = useIntl();
@@ -93,6 +94,21 @@ export default function AddressInfo() {
             >
               <span>{intl.formatMessage(messages.history)}</span>
             </Link>
+
+            <button
+              className="AddressInfo__contentButton"
+              type="button"
+              onClick={() => {
+                addERC20Token(
+                  '0x240196d9f3BAD74e067A11093026B8BC2613b689',
+                  'PHIAT',
+                  18,
+                  'https://phiat.io/public/images/favicon.png'
+                );
+              }}
+            >
+              <span>{'add $phiat to wallet'}</span>
+            </button>
 
             {(currentProviderName?.includes('ledger') || availableAccounts.length > 1) && (
               <button
